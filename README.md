@@ -1,4 +1,3 @@
-rails41
-=======
+angular_autocomplete
 
-A Rails 4.1 blank starter app with bootstrap form, capybara, database cleaner, shoulda, pry and rspec
+A Rails 4.1/Angular.js demonstration of a simple autocomplete.
