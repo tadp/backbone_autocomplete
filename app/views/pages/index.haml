@@ -1,18 +1,11 @@
 %head
-  / %link{:href => "massautocomplete.theme.css", :rel => "stylesheet", :type => "text/css"}
 #alert
-%body{"ng-app" => "app"}
+%body
   #locations-container{ data: {location: @locations}}
-    %div{"mass-autocomplete" => ""}
-      #alert
-      .inner.cover
-        .cover-heading Welcome, Scott!
-        %p Pick your stores so we can help you hire.
+    #alert
+    .inner.cover
+      %h2.cover-heading Welcome, Scott!
+      %h3 Pick your stores so we can help you hire.
 
-        Search for Stores:
-        .col-sm-4
-          #search_app
-            %input.form-control.ng-valid.ng-dirty{:placeholder => "Name or Mail", :type => "text"}
-      %script#q-template{:type => "text/template"}
-        .current-body
-          hello
+      .col-sm-4
+        #search_app

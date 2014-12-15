@@ -1,10 +1,12 @@
 class App.Views.StoreResult extends Backbone.View
   template: _.template(
-    "<div class='bs-callout bs-callout-info'>
-      <%= company %><br>
-      <%= location.street_1%>,<br>
-      <%= location.city %>, <%= location.state %>
-      <div class = 'btn btn-success add' data-id = <%=location.id%> > Add + </div>
+    "<div class='bs-callout bs-callout-info col-md-11'>
+      <div class='info'>
+        <%= company %><br>
+        <%= location.street_1%>,<br>
+        <%= location.city %>, <%= location.state %>
+      </div>
+      <div class = 'btn btn-success add col-md-3' data-id = <%=location.id%> > Add + </div>
     </div>
 
     ")

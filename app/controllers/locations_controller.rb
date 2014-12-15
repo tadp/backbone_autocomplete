@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
     current_user = User.first
     current_user.locations << location
     if current_user.save
-      render json: { success: true, message: 'You have successfully added this location to your account.' }
+      render json: { success: true, message: 'You have successfully added this location to your account' }
     else
       render json: { success: false  }, status: 422
     end

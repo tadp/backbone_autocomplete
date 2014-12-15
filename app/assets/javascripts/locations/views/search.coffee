@@ -1,5 +1,5 @@
 App.Views.Search = Backbone.View.extend
-  template: _.template("<input id='searchBox'></input><div class='results'></div>")
+  template: _.template("<input id='searchBox' class='form-control' placeholder = 'Search for Stores'></input><div class='results'></div>")
 
   events:
     'keyup #searchBox': 'filter'
